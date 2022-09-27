@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Weather</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <section class="w_1">
+        <form class="w_2" action="{{url_for('index')}}" method="POST">
+            <div class="w_3">
+                <div class="w_4">
+                    <img src="../static/images/sun and cloud.png" alt="">
+                </div>
+                <h1>Happy Weather</h1>
+            </div>
+            <div class="w_5">
+                <div class="w_6">
+                    <input type="text" placeholder="location" name="loc">
+                </div>
+                <div class="w_7">
+                    <button><img src="../static/images/Search Icon.png" alt=""></button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="r_1">
+        <div class="r_2">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/loc.png" alt="">
+                </div>
+                <b>location</b>
+            </div>
+            <div class="r_4">
+                <p>{{data}}</p>
+            </div>
+        </div>
+        <div class="r_2">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/temp-weather-removebg-preview.png" alt="">
+                </div>
+                <b>Temperature</b>
+            </div>
+            <div class="r_4">
+                <p>{{temperature}}</p>
+            </div>
+        </div>
+        <div class="r_2">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/humidity-removebg-preview.png" alt="">
+                </div>
+                <b>Humidity</b>
+            </div>
+            <div class="r_4">
+                <p>{{humidity}}</p>
+            </div>
+        </div>
+        <div class="r_2">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/wind-removebg-preview.png" alt="">
+                </div>
+                <b>Wind speed</b>
+            </div>
+            <div class="r_4">
+                <p>{{wind}}</p>
+            </div>
+        </div>
+        <div class="r_2">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/country-removebg-preview.png" alt="">
+                </div>
+                <b>Caountry</b>
+            </div>
+            <div class="r_4">
+                <p>{{country}}</p>
+            </div>
+        </div>
+        <div class="r_2">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/pressure-removebg-preview.png" alt="">
+                </div>
+                <b>Pressure</b>
+            </div>
+            <div class="r_4">
+                <p>{{pressure}}</p>
+            </div>
+        </div>
+        <div class="r_2 n_1">
+            <div class="r_3">
+                <div class="c_1">
+                    <img src="../static/images/description-removebg-preview.png" alt="">
+                </div>
+                <b>Weather condition</b>
+            </div>
+            <div class="r_4">
+                <p>{{atmosphere}}</p>
+            </div>
+        </div>
+    </section>
+    <script src="../static/java.js"></script>
+</body>
+</html>
