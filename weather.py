@@ -24,6 +24,10 @@ def index():
 
         temperature = python_dict['main']['temp']
 
+        temperature -= 273.15
+
+        temperature = "{:.2f}".format(temperature)
+
         humidity = python_dict['main']['humidity']
 
         country = python_dict['sys']['country']
