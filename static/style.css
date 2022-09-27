@@ -50,6 +50,8 @@ img{
     grid-template-columns: repeat(3,1fr);
     margin: 50px;
     gap: 30px;
+    color: white;
+    text-shadow: 1px 1px black;
 }
 .r_2{
     background: url(./images/wind.jpeg);
